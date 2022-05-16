@@ -1,249 +1,322 @@
-
-$main:#59B76A;
+$main: #59B76A;
 
 @import "_responsive.scss";
 
-body, html{
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0px;
-    
+
     font-family: 'Work Sans', sans-serif;
 }
-header{
-    background-color:#1c1c34;
+
+header {
+    background-color: #1c1c34;
     width: 100%;
-    display: block;
-    
-    @include tablet {
-          font-size: 36px;
-     }
-    @include desktop {
-        background-color:#1c1c34 ;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        text-transform: uppercase;
-    
-        }
-    
-    
-
-    
-
-    .nothing{
-        background-color:#1c1c34 ;
-        flex-basis: 400px;
-        
-    }
-    
-    .left{
-        display: flex;
-        padding-left: 8px;
-        letter-spacing: 10px;
-        height: 60px;
-        @include tablet {
-            font-size: 36px;
-       }
-        @include desktop {
-          background-color:#1c1c34 ;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          text-transform: uppercase;
-      
-          }
-
-        
-        
-
-        a{
-            
-            
-            font-size: 34px;
-            padding: 10px;
-            text-decoration: none;
-            color: white;
-            background-color:#1c1c34;
-            text-transform: uppercase;
-            font-family: 'Oswald', sans-serif;
-        @include tablet {
-          font-size: 20px;
-        }
-        @include desktop {
-          font-size: 20px;
-          padding: 10px;
-            text-decoration: none;
-            color: white;
-            background-color:#1c1c34;
-            text-transform: uppercase;
-            font-family: 'Oswald', sans-serif;
-        }
-            
-            
-        }
-        
-        
-    }
-
-    .center{
-
-        
-
-        @include desktop{
-            text-align: center;
-        }
-        background-color:#1c1c34;
-        
-        ul{
-            font-size: 12px;
-            padding-left: 8px;
-            display: flex;
-            flex-direction: row;  
-            margin-bottom: 0px;
-            margin-left: 5px;
-            margin-top: 0px;
-            
-        }
-
-        li{
-            padding: 6px;
-            list-style: none; 
-        }
-        a{
-            margin-left: 0px;
-            background-color:#1c1c34;
-            text-decoration: none;
-            color: white;
-            font-family: 'Oswald', sans-serif;
-
-            @include tablet {
-                font-size: 20px;
-              }
-              @include desktop {
-                font-size: 20px;
-                padding: 10px;
-                  text-decoration: none;
-                  color: white;
-                  background-color:#1c1c34;
-                  text-transform: uppercase;
-                  font-family: 'Oswald', sans-serif;
-              }
-
-        }
-
-    }
-}
-
-
-.main{  
-    padding-top: 0px;
-    padding-left: 25px;
-    width: 100%;
-    height:970px;
-    background-color:#1c1c34;
     display: flex;
-    justify-content:center;
     flex-direction: column;
-    @include desktop{
+    justify-content: center;
+    align-items: center;
+    
+
+    a {
+
+        
+        
+        padding-left: 16px;
+        padding-top: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #1c1c34;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
 
     }
 
+    
     @include tablet{
 
     }
 
-    .cerveza{
-        width: 40%
-    }
-    
-    img{
-        width: 100%;
+    @include desktop {
+        background-color: #1c1c34;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+
     }
 
-    .description{
-        
-        
-        width: 40%;
-        height: 450px;
-        
+    .nothing {
+        background-color: #1c1c34;
+        flex-basis: 400px;
+
     }
-    .desc{
+
+    .left {
+        font-size: 54px;
+        display: flex;
+        padding-left: 1px;
+        letter-spacing: 10px;
+        height: 60px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+
+    @include tablet {
+    font-size: 50px;
+    }
+
+    @include desktop {
+        margin-bottom: 15px;
+        font-size: 50px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #1c1c34;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+    }
+
+
+    
+
+    .center {
+
+        background-color:#1c1c34;
+
+        ul {
+            font-size: 12px;
+            padding-left: 2px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            margin-top: 0px;
+
+        }
+
+        li {
+            
+            list-style: none;
+        }
+
+        a {
+            margin-left: 0px;
+            background-color: #1c1c34;
+            text-decoration: none;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-size: 23px;
+            padding: 7px;
+
+        @include desktop {
+            text-align: center;
+        }
+
+       
+
+        
+        
+
+        }
+
+    }
+
+}
+
+.main {
+    padding-top: 0px;
+    width: 100%;
+    max-width: 100%;
+    
+    height: 900px;
+    
+    background-color: #1c1c34;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        height: 700px;
+    }
+
+    @include tablet {}
+
+    .cerveza {
+        width: 80%;
+        @include tablet {
+            width: 50%;
+        }
+
+
+        @include desktop {
+        
+        width: 50%;
+        padding-left: 80px;
+        }
+
+    }
+
+    img {
+        width: 70%;
+        @include desktop {
+        width: 60%;
+        }
+    
+    }
+
+    .description {
+
+        
+        width: 70%;
+        height: 550px;
+        @include desktop {
+            width: 30%;
+
+            h2{
+                padding-top: 0px;
+                font-size: 50px;
+            }
+            }
+
+    }
+
+    
+
+    .desc {
         font-family: 'Oswald', sans-serif;
         background-color: #1c1c34;
-        
+
         color: #f5f6f6;
-        
-        
-        
-        
+
+        @include desktop {
+            padding-bottom: 30px;
+        }
+
+
+    }
+    .desc2{
+        @include desktop {
+            font-family: 'Oswald', sans-serif;
+        background-color: #1c1c34;
+
+        color: #f5f6f6;
+        }
+
+        .lupulo {
+            img {
+                width: 70%;
+            }
+
+        }
+
+        .cebada {
+            img {
+                width: 20%;
+            }
+        }
+
     }
 
-    .one{
+    .descripcion{
+        display: flex;
+        
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
+    
+
+
+    .one {
         font-family: 'Oswald', sans-serif;
         height: 40px;
-        border-bottom: 3px solid #d39b1f; 
+        border-bottom: 3px solid #d39b1f;
     }
 
-    .two{
+    .two {
         font-family: 'Oswald', sans-serif;
-       margin-top: 15px;
-       margin-bottom: 0px;
-    }
-    .vol{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        @include desktop {
+            padding: 0px;
+            font-size: 20px;
+        }
         
+    }
+
+    .vol {
+
         color: #f5f6f6;
-        font-size:30px;
+        font-size: 30px;
         border-bottom: 3px solid #d39b1f;
         font-family: 'Oswald', sans-serif;
     }
 
-    .three{
+    .three {
         text-align: center;
         margin-top: 10px;
         height: 70px;
-        border-bottom: 3px solid #d39b1f; 
+        border-bottom: 3px solid #d39b1f;
         font-size: 20px;
+        @include desktop {
+            padding: 0px;
+        }
     }
-    .four{
+
+    .four {
         display: flex;
         
-        .ingredint-item{
-            margin-right: 70px;
+
+        .ingredint-item {
+            margin-right: 20px;
         }
 
-        .agua{
-            img{
+        .agua {
+            img {
+                @include desktop {
+                width: 70%;
+                }
                 width: 150%;
             }
-            
-        }
-        .malta{
-            img{
-                width: 150%;
-            }
-            
-        }
-        .maiz{
-            img{
-                width: 190%;
-            }
-            
-        }
-        .lupulo{
-            img{
-                width: 120%;
-            }
-            
-        }
-        .cebada{
-            img{
-                width: 100%;
-            }
-        }
-        
 
-        
+        }
+
+        .malta {
+            img {
+                @include desktop {
+                    width: 75%;
+                }
+                width: 150%;
+            }
+
+        }
+
+        .maiz {
+            img {
+                width: 70%;
+            }
+
+        }
 
     }
+
+   
+
+       
+
+
+    
+
+    
 }
