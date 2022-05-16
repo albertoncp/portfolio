@@ -1,0 +1,250 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  background-color: #1c1c34;
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    background-color: #1c1c34;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+}
+
+header .nothing {
+  background-color: #1c1c34;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 8px;
+  letter-spacing: 10px;
+  height: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .left {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .left {
+    background-color: #1c1c34;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+}
+
+header .left a {
+  font-size: 34px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #1c1c34;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header .left a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .left a {
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #1c1c34;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+header .center {
+  background-color: #1c1c34;
+}
+
+@media only screen and (min-width: 992px) {
+  header .center {
+    text-align: center;
+  }
+}
+
+header .center ul {
+  font-size: 12px;
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+header .center li {
+  padding: 6px;
+  list-style: none;
+}
+
+header .center a {
+  margin-left: 0px;
+  background-color: #1c1c34;
+  text-decoration: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header .center a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .center a {
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #1c1c34;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+.main {
+  padding-top: 0px;
+  padding-left: 25px;
+  width: 100%;
+  height: 970px;
+  background-color: #1c1c34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .cerveza {
+  width: 40%;
+}
+
+.main img {
+  width: 100%;
+}
+
+.main .description {
+  width: 40%;
+  height: 450px;
+}
+
+.main .desc {
+  font-family: 'Oswald', sans-serif;
+  background-color: #1c1c34;
+  color: #f5f6f6;
+}
+
+.main .one {
+  font-family: 'Oswald', sans-serif;
+  height: 40px;
+  border-bottom: 3px solid #d39b1f;
+}
+
+.main .two {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.main .vol {
+  color: #f5f6f6;
+  font-size: 30px;
+  border-bottom: 3px solid #d39b1f;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main .three {
+  text-align: center;
+  margin-top: 10px;
+  height: 70px;
+  border-bottom: 3px solid #d39b1f;
+  font-size: 20px;
+}
+
+.main .four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .four .ingredint-item {
+  margin-right: 70px;
+}
+
+.main .four .agua img {
+  width: 150%;
+}
+
+.main .four .malta img {
+  width: 150%;
+}
+
+.main .four .maiz img {
+  width: 190%;
+}
+
+.main .four .lupulo img {
+  width: 120%;
+}
+
+.main .four .cebada img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
